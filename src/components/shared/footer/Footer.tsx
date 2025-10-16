@@ -78,7 +78,7 @@ const Footer = () => {
   <div className="my-4 w-full">
               
               <p className="text-muted-foreground text-start leading-relaxed ">
-               Making EVs the default choice of commute for the masses by solving the adoption challenges by technolog, and making them better than ICE Vehicles in every way.
+               Making EVs the default choice of commute for the masses by solving the adoption challenges by technology, and making them better than ICE Vehicles in every way.
 
               </p>
             </div>

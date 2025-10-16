@@ -77,6 +77,7 @@ const Topbar = () => {
 
           {/* Technology Dropdown (Permanent Blur) */}
           <div
+          onClick={() => setOpenDrop(!openDrop)}
             className={`flex items-center justify-center gap-1 hover:text-primary-main transition-colors duration-200 ${
               openDrop && "text-primary-main"
             }`}
@@ -94,7 +95,7 @@ const Topbar = () => {
                     <li
                       className="cursor-pointer hover:text-primary flex items-center gap-1"
                       onClick={() => {
-                        router.push("/technology/#swap");
+                        router.push("/technology");
                         setOpenDrop(false);
                       }}
                     >
@@ -113,7 +114,8 @@ const Topbar = () => {
                 </div>
               }
             />
-            {openDrop ? <ArrowDropUp /> : <ArrowDropDown />}
+            <div className="cursor-pointer" onClick={(e) => {e.stopPropagation(), setOpenDrop(!openDrop)}} >
+            {openDrop ? <ArrowDropUp /> : <ArrowDropDown  />}</div>
           </div>
 
           <p

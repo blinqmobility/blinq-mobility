@@ -40,8 +40,8 @@ const DEFAULT_HOTSPOTS: Hotspot[] = [
   },
   {
     id: 'Blogs',
-    x: 80,
-    y: 35,
+    x: 38,
+    y: 30,
     title: 'Blogs',
     links: "/#blog",
   },
@@ -100,8 +100,8 @@ const MOBILE_HOTSPOTS: Hotspot[] = [
   },
   {
     id: 'Blogs',
-    x: 90, // Changed from 80 to 90 for mobile
-    y: 25,
+    x: 33, // Changed from 80 to 90 for mobile
+    y: 30,
     title: 'Blogs',
     links: "/#blog",
   },

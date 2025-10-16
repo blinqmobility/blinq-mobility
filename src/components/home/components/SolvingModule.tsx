@@ -171,15 +171,17 @@ const SolvingModule = () => {
   };
 
   return (
-    <section className="py-20 bg-background mt-[100px]">
+    <section className="py-10 bg-background ">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Unlocking Mass EV Adoption every challenge in urban mobility
- <span className="text-gradient ml-2">solved through innovative engineering and smart technology.
-</span>
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+     <h2 className="text-4xl md:text-5xl font-bold leading-snug md:leading-tight">
+  Unlocking Mass EV Adoption every challenge in urban mobility
+  <span className="text-gradient ml-2">
+    solved through innovative engineering and smart technology.
+  </span>
+</h2>
+
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto mt-2">
            Every challenge in Electric mobility solved through Clever design and cuttinf-edge technology.
           </p>
         </div>
