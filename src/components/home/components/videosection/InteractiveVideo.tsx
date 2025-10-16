@@ -208,7 +208,7 @@ export const InteractiveVideo = () => {
         <video
           ref={videoRef}
           className="w-full h-full object-cover"
-          src="https://res.cloudinary.com/doze8mibh/video/upload/v1760350182/NewCity_ua2etg.mp4"
+          src="https://res.cloudinary.com/doze8mibh/video/upload/v1760596919/New_new_city_video_b8nzrk.mp4"
           autoPlay
           loop
           muted
