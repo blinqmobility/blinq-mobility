@@ -8,7 +8,7 @@ import gp4 from "@/untils/images/gp4.jpg"
 import ajeetImg from '@/untils/images/Ajeet.png';
 import ankitImg from '@/untils/images/ankit.jpg.png';
 import manasiImg from '@/untils/images/Manasi.jpg';
-import nikeshImg from '@/untils/images/nikesh  1.png';
+import nikeshImg from '@/untils/images/nikesh  1 1.png';
 import pritishImg from '@/untils/images/Pritish.jpg';
 import ritikImg from '@/untils/images/ritik.jpeg';
 import sohamImg from '@/untils/images/Soham .jpg';
