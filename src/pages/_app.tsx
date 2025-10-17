@@ -36,7 +36,7 @@ const GA_MEASUREMENT_ID = "G-TJLXDG9HFW";
     <>
     <Wrapper>
       <Component {...pageProps} />
-        <ToastContainer />
+        <ToastContainer className="z-[8000000]"/>
     
     </Wrapper>
        
