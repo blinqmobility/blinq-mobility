@@ -4,7 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
-
+   import ReactGA from 'react-ga4';
 import { Button } from "@/components/shared/Button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/shared/Card";
 import { Input } from "@/components/shared/input";
@@ -50,6 +50,11 @@ const Contact = () => {
 
   // ✅ Submit Handler
   const onSubmit = async (data: ContactFormData) => {
+     ReactGA.event({
+          category: 'User Interaction',
+          action: 'Button Click',
+          label: 'Contact Us Button'
+        });
     setLoading(true);
     try {
       await emailjs.send(
