@@ -245,7 +245,7 @@ const Topbar = () => {
                     : "hover:text-primary-main"
                 }`}
                 onClick={() => {
-                  router.push("/blogs/iitstartupindia-cohort-12");
+                  router.push("/#blog");
                   handleSidebarClose();
                 }}
               >
