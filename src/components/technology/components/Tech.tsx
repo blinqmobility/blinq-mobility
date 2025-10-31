@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Card } from "@/components/shared/Card";
 import { useTechScrollAnimation } from "@/hooks/useTechScrollAnimation";
-
+ import ReactGA from 'react-ga4';
 import FeatureIcon from "@/components/technology/components/FeatureIcon";
 import design from "@/untils/images/tech/Sleek and Elegant design.png";
 import cabin from "@/untils/images/tech/Spacious Cabin.png";
@@ -412,7 +412,15 @@ const router = useRouter();
       {techFeatures.map((feature, index) => (
         <button
           key={feature.id}
-          onClick={() => setActiveFeature(index)}
+          onClick={() => {setActiveFeature(index)
+ ReactGA.event({
+      category: "Tech Features",
+      action: "Feature Selected",
+      label: feature.title,
+      value: 1,
+    });
+
+          }}
           className={`w-full text-left p-4 rounded-xl transition-all duration-300 ${
             activeFeature === index
               ? "bg-primary text-primary-foreground shadow-electric"
