@@ -50,11 +50,12 @@ const Contact = () => {
 
   // ✅ Submit Handler
   const onSubmit = async (data: ContactFormData) => {
-     ReactGA.event({
-          category: 'User Interaction',
-          action: 'Button Click',
-          label: 'Contact Us Button'
-        });
+       ReactGA.event({
+      category: "Contact Form",
+      action: "Submit Button Click",
+      label: "Send Message",
+      value: 1,
+    });
     setLoading(true);
     try {
       await emailjs.send(
