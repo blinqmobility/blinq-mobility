@@ -20,6 +20,14 @@ import yashDeep from '@/untils/images/Yashdeep.png';
 import servesh from '@/untils/images/sarvesh.jpg';
 import abhishek from '@/untils/images/Abhisekh.jpg';
 import anish from '@/untils/images/Anees Ahmed Khan.jpg';
+import g2 from '@/untils/images/nexus 2.jpg';
+import g3 from '@/untils/images/me.jpg';
+import g1 from '@/untils/images/Copy of IMG_20250913_104217.jpg';
+import g6 from '@/untils/images/Copy of IMG_20250913_001938.jpg';
+import g8 from '@/untils/images/boss.jpg';
+import g9 from '@/untils/images/1738258039827.jpg';
+import camp from '@/untils/images/campus fund 2.jpg';
+import nikeshspeech from '@/untils/images/WhatsApp Image 2025-01-25 at 23.29.29_0fb77bce.jpg';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
@@ -308,8 +316,8 @@ engineer reliable EVs from scratch,
             </div> */}
             
             <div className="relative group overflow-hidden rounded-2xl aspect-[4/3] animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <img 
-                src="https://res.cloudinary.com/doze8mibh/image/upload/v1759684625/Copy_of_IMG_20250913_104217_axphty.jpg" 
+              <Image 
+                src={g1} 
                 alt="Team collaboration"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -317,8 +325,8 @@ engineer reliable EVs from scratch,
             </div>
             
             <div className="relative group overflow-hidden rounded-2xl aspect-[4/3] animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              <img 
-                src="https://res.cloudinary.com/doze8mibh/image/upload/v1759684625/nexus_2_1_hlsayb.jpg" 
+              <Image 
+                src={g2} 
                 alt="Nexus achievement"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -326,8 +334,8 @@ engineer reliable EVs from scratch,
             </div>
             
             <div className="relative group overflow-hidden rounded-2xl aspect-[4/3] animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <img 
-                src="https://res.cloudinary.com/doze8mibh/image/upload/v1759684625/WhatsApp_Image_2025-01-25_at_23.29.29_0fb77bce_y5tdyo.jpg" 
+              <Image 
+                src={nikeshspeech }
                 alt="Innovation at work"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -335,8 +343,8 @@ engineer reliable EVs from scratch,
             </div>
             
             <div className="relative group overflow-hidden rounded-2xl aspect-[4/3] animate-fade-in" style={{ animationDelay: '0.5s' }}>
-              <img 
-                src="https://res.cloudinary.com/doze8mibh/image/upload/v1759684624/campus_fund_2_siirth.jpg" 
+              <Image 
+                src={camp} 
                 alt="Campus funding milestone"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -344,8 +352,8 @@ engineer reliable EVs from scratch,
             </div>
             
             <div className="relative group overflow-hidden rounded-2xl aspect-[4/3] animate-fade-in" style={{ animationDelay: '0.6s' }}>
-              <img 
-                src="https://res.cloudinary.com/doze8mibh/image/upload/v1759684624/me_tboxar.jpg" 
+              <Image 
+                src={g3} 
                 alt="Team member spotlight"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -353,8 +361,8 @@ engineer reliable EVs from scratch,
             </div>
             
             <div className="relative group overflow-hidden rounded-2xl aspect-[4/3] animate-fade-in" style={{ animationDelay: '0.7s' }}>
-              <img 
-                src="https://res.cloudinary.com/doze8mibh/image/upload/v1759684624/Copy_of_WhatsApp_Image_2025-09-28_at_02.06.29_ee0d7390_xeajrd.jpg" 
+              <Image 
+                src={g6} 
                 alt="Workshop moments"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -362,8 +370,8 @@ engineer reliable EVs from scratch,
             </div>
             
             <div className="relative group overflow-hidden rounded-2xl aspect-[4/3] animate-fade-in" style={{ animationDelay: '0.8s' }}>
-              <img 
-                src="https://res.cloudinary.com/doze8mibh/image/upload/v1759684623/boss_nbjz6g.jpg" 
+              <Image 
+                src={g8} 
                 alt="Leadership"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -371,9 +379,10 @@ engineer reliable EVs from scratch,
             </div>
             
             <div className="relative group overflow-hidden rounded-2xl aspect-[4/3] animate-fade-in" style={{ animationDelay: '0.9s' }}>
-              <img 
-                src="https://res.cloudinary.com/doze8mibh/image/upload/v1759684623/1738258039827_1_a9giq0.jpg" 
-                alt="Team spirit"
+              <Image 
+                src={g9} 
+                alt="Team meeting" 
+                
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
