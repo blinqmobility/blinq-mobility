@@ -1,8 +1,8 @@
 import { Button } from '@/components/shared/Button';
 import { ArrowRight, Calendar, Calculator } from 'lucide-react';
-import fleetMountains from '@/untils/images/fleet/flt6.png';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import fleetbg from '@/untils/images/newimages/bgblinqfeet.png';
 
 export const CTASection = () => {
   const router = useRouter()
@@ -11,12 +11,14 @@ export const CTASection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={fleetMountains}
-          alt="Fleet of Blinq Pods at swap station"
-          className="w-full h-full object-cover"
+          src={fleetbg}
+          alt="Blinq fleet background"
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-background/80" />
-        <div className="absolute inset-0 bg-gradient-hero" />
+        <div className="absolute inset-0 bg-gradient-hero opacity-70" />
       </div>
 
       {/* Content */}
@@ -105,8 +107,7 @@ export const CTASection = () => {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-1/4 left-10 w-32 h-32 bg-electric-blue/20 rounded-full blur-2xl animate-float" />
-      <div className="absolute bottom-1/4 right-10 w-40 h-40 bg-electric-green/20 rounded-full blur-2xl animate-float" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-black/10 to-transparent pointer-events-none" />
     </section>
   );
 };

@@ -1,12 +1,12 @@
 import Contact from '@/components/contactus';
 import { memo } from 'react';
 
-const index = () => {
+function ContactUsPage() {
   return (
     <div>
     <Contact />
     </div>
   );
-};
+}
 
-export default memo(index);
+export default memo(ContactUsPage);

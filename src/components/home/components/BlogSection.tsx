@@ -6,6 +6,7 @@ import blog2 from "@/untils/images/blog/blog2.webp"
 import blog3 from "@/untils/images/blog/blog3.png"
 import blog4 from "@/untils/images/blog/blog4.jpg"
 import blog5 from "@/untils/images/blog5.png"
+import blog6 from "@/untils/images/newimages/Blinq Team.jpg"
 import Image from "next/image";
 
 const BlogSection = () => {
@@ -57,6 +58,16 @@ const BlogSection = () => {
       date: "2024",
       author: "Blinq Research",
       image: blog5,
+      url: "https://www.linkedin.com/pulse/battery-swapping-powering-next-wave-ev-adoption-blinq-mobility-pbkgf/",
+      category: "Industry Insights"
+    },
+    {
+      id: 6,
+      title: "Blinq Mobility raises ₹4.3 cr Pre-Seed to develop 4W battery swapping",
+      description: "Blinq Mobility Pvt. Ltd.an electric mobility startup, has raised ₹4.3 crore in a pre-seed funding round led by 8i Ventures.The round also saw participation from IIMA Ventures, AIC Banasthali Vidyapith, and a group of angel investors",
+      date: "2025",
+      author: "Blinq Research",
+      image: blog6,
       url: "https://www.linkedin.com/pulse/battery-swapping-powering-next-wave-ev-adoption-blinq-mobility-pbkgf/",
       category: "Industry Insights"
     }

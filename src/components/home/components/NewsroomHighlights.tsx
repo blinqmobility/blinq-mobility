@@ -18,6 +18,8 @@ import nidhi from "@/untils/images/5.jpg";
 import op from "@/untils/images/9.jpeg";
 import seed from "@/untils/images/11.png";
 import aamf from "@/untils/images/6.jpeg";
+import tcs from "@/untils/images/newimages/2 (1).png";
+import evs from "@/untils/images/newimages/7.png";
 
 interface Highlight {
   image: StaticImageData;
@@ -26,6 +28,8 @@ interface Highlight {
 
 const highlights: Highlight[] = [
   { image: aamf, title: "FIIRE Goa Acceleration Program" },
+  { image: tcs, title: "FIIRE Goa Acceleration Program" },
+  { image: evs, title: "EVS" },
   { image: seed, title: "Seed Fund" },
   { image: gov, title: "Government of India" },
   { image: op, title: "Open Power Alliance" },
@@ -39,6 +43,7 @@ const highlights: Highlight[] = [
   { image: nexo, title: "Nexus Startup Hub" },
   { image: i8, title: "8i Ventures" },
   { image: iimas, title: "IIM Ahmedabad" },
+
 ];
 
 export default function NewsroomHighlights() {
@@ -92,7 +97,7 @@ export default function NewsroomHighlights() {
                   <Image
                     src={item.image}
                     alt={item.title}
-                    className="object-contain w-full h-full drop-shadow-lg"
+                    className="object-contain w-full h-full drop-shadow-lg "
                     priority={index < 3} // optimize LCP
                   />
                 </div>

@@ -6,13 +6,12 @@ import TechPage from "../components/technology/index"
 
 
 
-const index = () => {
-
-
+function TechnologyPage() {
   return (
- <>
- <TechPage /></>
+    <>
+      <TechPage />
+    </>
   );
-};
+}
 
-export default memo(index);
+export default memo(TechnologyPage);

@@ -34,16 +34,21 @@ const Footer = () => {
               </div>
               <div className="flex items-start gap-3 text-sm">
                 <MapPin className="w-4 h-4 text-electric-blue flex-shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">
+                <a
+                  href="https://www.google.com/maps/place/Blinq+Mobility,+169,+Sikandarpur+Rd,+Sikandarpur+Badha,+Sector+85,+Gurugram,+Haryana+122012/data=!4m2!3m1!1s0x390d3d004569ddc7:0xfb92e57723a2e8af!17m2!4m1!1e3!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBjI2LjUuNBgAIJ6dCiqSASw5NDI2NzcyNyw5NDI3NTQwNyw5NDI5MjE5NSw5NDI5OTUzMiwxMDA3OTY0OTIsOTQyODQ0NzIsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksOTQyNjI3MzMsMTAwNzkxNDc5QgJJTg%3D%3D&skid=37a4e03d-3b5b-44bc-9baf-f5bc3813a6b3&g_st=aw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-electric-blue transition-colors"
+                >
                   169, Sikandarpur Badha, Sector 85<br />
-                  Gurgaon, Haryana - 122004
-                </span>
+                  Gurugram, Haryana - 122004
+                </a>
               </div>
             </div>
 
             {/* Social Links */}
             <div className="flex gap-4 mt-6">
-              <Button size="sm" variant="ghost" className="p-2 h-auto hover:bg-electric-blue/10" onClick={() => window.open('//www.linkedin.com/company/blinq-mobility/', '_blank')}>
+              <Button size="sm" variant="ghost" className="p-2 h-auto hover:bg-electric-blue/10" onClick={() => window.open('https://www.linkedin.com/company/blinq-mobility/ ', '_blank')}>
                 <Linkedin className="w-4 h-4 text-electric-blue hover:text-electric-blue" />
               </Button>
               <Button size="sm" variant="ghost" className="p-2 h-auto hover:bg-electric-blue/10  hover:text-electric-blue  text-electric-blue" onClick={() => window.open('https://x.com/Blinqmobility', '_blank')}>

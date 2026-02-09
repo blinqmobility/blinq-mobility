@@ -182,7 +182,7 @@ const SolvingModule = () => {
 </h2>
 
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mt-2">
-           Every challenge in Electric mobility solved through Clever design and cuttinf-edge technology.
+           Every challenge in Electric mobility solved through Clever design and cutting-edge technology.
           </p>
         </div>
 

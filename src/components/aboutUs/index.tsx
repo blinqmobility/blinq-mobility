@@ -4,7 +4,6 @@ import { Badge } from '@/components/shared/Badge';
 import { Zap, Target, Eye, Users, Award, Car, Linkedin } from 'lucide-react';
 
 import abhilashaImage from '@/untils/images/Abhilasha.jpg';
-import gp4 from "@/untils/images/gp4.jpg"
 import ajeetImg from '@/untils/images/Ajeet.png';
 import ankitImg from '@/untils/images/ankit.jpg.png';
 import manasiImg from '@/untils/images/Manasi.jpg';
@@ -26,8 +25,14 @@ import g1 from '@/untils/images/Copy of IMG_20250913_104217.jpg';
 import g6 from '@/untils/images/Copy of IMG_20250913_001938.jpg';
 import g8 from '@/untils/images/boss.jpg';
 import g9 from '@/untils/images/1738258039827.jpg';
+import g10 from '@/untils/images/newimages/jurney 1.jpg';
+import chittar from '@/untils/images/newimages/Chittar bhaiya.jpeg';
 import camp from '@/untils/images/campus fund 2.jpg';
 import nikeshspeech from '@/untils/images/WhatsApp Image 2025-01-25 at 23.29.29_0fb77bce.jpg';
+import g11 from '@/untils/images/newimages/Blinq Team.jpg';
+import g12 from '@/untils/images/newimages/jurny2.png';
+import bgheader from '@/untils/images/newimages/just swap bg.png';
+
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
@@ -48,14 +53,24 @@ const coreTeam = [
   { name: 'Soham Patil', image: sohamImg, role: 'Firmware Engineer', department: 'Technical', fullTitle: 'Electrical Systems', linkedin: 'https://www.linkedin.com/in/soham-patil-660621225/' },
   { name: 'Ajeet Jangid', image: ajeetImg, role: 'Technical Associate', department: 'Technical', fullTitle: 'Mechanical Systems', linkedin: 'https://www.linkedin.com/in/ajeet-jangid-33b2bb1a5/' },
   { name: 'Abhishek Gour', image: abhishek, role: 'Technical Associate', department: 'Technical', fullTitle: 'Mechanical Systems', linkedin: 'https://www.linkedin.com/in/abhi-shek-1203b21b7/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' },
+  { name: ' Chittar Singh Rathore', image: chittar, role: 'Technical Associate', department: 'Technical', fullTitle: 'Electrical systems', linkedin: 'https://in.linkedin.com/in/chhitar-rathore-5477b539b' },
 ];
 const About = () => {
   const router = useRouter()
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center py-20">
-        <div className="absolute inset-0 bg-hero-gradient" />
+      <section className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden">
+        <Image
+          src={bgheader}
+          alt=""
+          fill
+          className="object-cover object-center"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute bottom-0 left-0 w-full h-[60px] bg-gradient-to-t from-background to-transparent pointer-events-none z-[1000]" />
+        <div className="absolute inset-0 bg-black/50 z-[1]" aria-hidden />
         
         <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
           <Badge className="mb-6 bg-electric-blue/20 text-electric-blue border-electric-blue/30 hover:bg-electric-blue/30">
@@ -68,18 +83,38 @@ const About = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-         Building a seamless zero-emission ecosystem powered by purpose-built vehicles, AI-driven battery swapping, and microfactories for sustainable urban mobility.
+          Building a seamless zero-emission ecosystem powered by electric vehicles, AI-driven battery swapping, and microfactories for sustainable urban
+
 
           </p>
         </div>
         
         {/* Floating elements */}
-        <div className="absolute top-20 left-20 w-20 h-20 bg-electric-blue/20 rounded-full animate-float" />
+        {/* <div className="absolute top-20 left-20 w-20 h-20 bg-electric-blue/20 rounded-full animate-float" />
         <div className="absolute bottom-32 right-16 w-16 h-16 bg-electric-cyan/20 rounded-full animate-float" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/2 left-10 w-12 h-12 bg-electric-green/20 rounded-full animate-float" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/2 left-10 w-12 h-12 bg-electric-green/20 rounded-full animate-float" style={{ animationDelay: '2s' }} /> */}
       </section>
 
       {/* Story Section */}
+      <section className="py-20 px-6 bg-background">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-4xl font-bold mb-6">
+            Join the <span className="text-gradient">Powering the Electric Revolution</span>
+          </h2>
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Join us to design, build, and scale the EVs redefining how the world moves.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            
+            <button onClick={()=>{
+              router.push("https://www.notion.so/Blinq-Build-the-Future-of-Mobility-With-Us-27853783cf5b807e90f9c9524c5393c6?source=copy_link")
+            }} className="px-8 py-4 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:bg-secondary/80 transition-colors">
+            Be Part of our Journey
+            </button>
+          </div>
+        </div>
+      </section>
       <section className="py-20 px-6 max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
@@ -107,7 +142,7 @@ const About = () => {
     We were part of 
     <span className="text-electric-blue font-semibold"> IIT Delhi’s AXLR8R Formula Racing team</span>, 
     where we designed, built, and raced 
-    <span className="text-electric-blue font-semibold"> Formula-style electric cars</span> 
+    <span className="text-electric-blue font-semibold mr-1"> Formula-style electric cars</span> 
     at international competitions. Those years on the racing circuit taught us far more than just speed. 
     We learned how to 
 engineer reliable EVs from scratch, 
@@ -120,8 +155,8 @@ engineer reliable EVs from scratch,
     Blinq Pod, is a lightweight, modular electric vehicle 
     with less than 5-minute swappable batteries, 
     built to deliver safe, comfortable, and affordable rides without the downtime of charging. 
-    Starting with the ride-hailing market, 
-    <span className="text-electric-blue font-semibold">
+    Starting with the ride-hailing market. 
+     <span className=" ml-1 text-electric-blue font-semibold">
       we are creating technology that makes mobility more efficient for drivers, operators, and passengers alike
     </span>.
   </p>
@@ -150,7 +185,7 @@ engineer reliable EVs from scratch,
                 className="rounded-2xl shadow-electric w-full aspect-[4/3] object-cover"
               />
               <Image 
-                src={gp4} 
+                src={g11} 
                 alt="Team collaborating in workspace"
                 className="rounded-2xl shadow-accent w-full aspect-[4/3] object-cover"
               />
@@ -306,14 +341,7 @@ engineer reliable EVs from scratch,
 
           {/* Enhanced Gallery Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* <div className="relative group overflow-hidden rounded-2xl aspect-[4/3] animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              <img 
-                src="https://res.cloudinary.com/doze8mibh/image/upload/v1759684625/Copy_of_IMG_20250913_001938_beqffh.jpg" 
-                alt="Blinq team culture"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
-            </div> */}
+        
             
             <div className="relative group overflow-hidden rounded-2xl aspect-[4/3] animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <Image 
@@ -387,30 +415,41 @@ engineer reliable EVs from scratch,
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
             </div>
+            <div className="relative group overflow-hidden rounded-2xl aspect-[4/3] animate-fade-in" style={{ animationDelay: '0.9s' }}>
+              <Image 
+                src={g10} 
+                alt="Team meeting" 
+                
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
+            </div>
+            <div className="relative group overflow-hidden rounded-2xl aspect-[4/3] animate-fade-in" style={{ animationDelay: '0.9s' }}>
+              <Image 
+                src={g11} 
+                alt="Team meeting" 
+                
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
+            </div>
+            <div className="relative group overflow-hidden rounded-2xl aspect-[4/3] animate-fade-in" style={{ animationDelay: '0.9s' }}>
+              <Image 
+                src={g12} 
+                alt="Team meeting" 
+                
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
+            </div>
+         
+            
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-card/30">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-4xl font-bold mb-6">
-            Join the <span className="text-gradient">Powering the Electric Revolution</span>
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join us to design, build, and scale the EVs redefining how the world moves.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            
-            <button onClick={()=>{
-              router.push("https://www.notion.so/Blinq-Build-the-Future-of-Mobility-With-Us-27853783cf5b807e90f9c9524c5393c6?source=copy_link")
-            }} className="px-8 py-4 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:bg-secondary/80 transition-colors">
-            Be Part of our Journey
-            </button>
-          </div>
-        </div>
-      </section>
+    
     </div>
   );
 };

@@ -1,11 +1,11 @@
 import { useState, useEffect, use } from 'react';
 import { Button } from '@/components/shared/Button';
 import { ArrowRight, Calendar, ChevronLeft, ChevronRight, Phone } from 'lucide-react';
-import fleetLineup from '@/untils/images/fleet/flt1.png';
-import fleetHighway from '@/untils/images/fleet/flt2.png';
-import fleetRoad from '@/untils/images/fleet/flt3.png';
-import fleetMountains from '@/untils/images/fleet/flt4.png';
-import singleVehicle from '@/untils/images/fleet/flt5.png';
+import fleetLineup from '@/untils/images/newimages/slide1.png';
+import fleetHighway from '@/untils/images/newimages/slide2.png';
+import fleetRoad from '@/untils/images/newimages/slide3.png';
+import fleetMountains from '@/untils/images/newimages/slide4.png';
+import singleVehicle from '@/untils/images/newimages/slide5.png';
 import Image from 'next/image';
 import { ProblemsSection } from './components/ProblemsSection';
 import { AdvantagesSection } from './components/AdvantagesSection';
@@ -90,7 +90,8 @@ const router = useRouter();
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in">
-          Purpose-built electric fleets that maximize uptime and slash operating costs.
+        Fleet-first electric vehicles that maximize uptime and slash operating costs.
+
         </p>
     <Button 
     onClick={()=>{ router.push("/contact-us")}}

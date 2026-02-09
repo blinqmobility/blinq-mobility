@@ -3,10 +3,10 @@ import { Card } from "@/components/shared/Card";
 import { useTechScrollAnimation } from "@/hooks/useTechScrollAnimation";
  import ReactGA from 'react-ga4';
 import FeatureIcon from "@/components/technology/components/FeatureIcon";
-import design from "@/untils/images/tech/Sleek and Elegant design.png";
+import design from "@/untils/images/newimages/Sleek & elegant design.png";
 import cabin from "@/untils/images/tech/Spacious Cabin.png";
 import braking from "@/untils/images/tech/Advanced Braking.jpeg";
-import aiImage from "@/untils/images/Ai Enabled Features.png";
+import aiImage from "@/untils/images/newimages/AI-Enabled Features.png";
 import maneuver from "@/untils/images/tech/Compact Manuoverability.png";
 import composive from "@/untils/images/tech/Sleek Design.jpeg";
 import Image from "next/image";
@@ -319,7 +319,7 @@ const router = useRouter();
             
             <video
   className="w-full h-full  object-cover"
-  src="https://res.cloudinary.com/doze8mibh/video/upload/v1760353987/360new_sufbux.mp4"
+  src="https://res.cloudinary.com/doze8mibh/video/upload/v1770611399/rotating_platform_gr3eds.mp4"
   autoPlay
   loop
   muted

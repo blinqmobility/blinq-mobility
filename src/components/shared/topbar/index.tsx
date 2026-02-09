@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Logo from "@/untils/images/logo 1.svg";
+import Logo from "@/untils/images/newimages/Logo Rect White 4k.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import Image from "next/image";
 import CloseIcon from "@mui/icons-material/Close";
@@ -59,7 +59,7 @@ const Topbar = () => {
             <Image
               src={Logo}
               alt="Logo"
-              className="w-[80px] md:w-[120px] h-auto object-contain"
+              className="w-[80px] md:w-[150px] h-auto object-contain"
             />
           </h1>
         </div>

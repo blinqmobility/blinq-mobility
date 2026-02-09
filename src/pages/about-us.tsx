@@ -2,10 +2,10 @@
 import About from '@/components/aboutUs'
 import React from 'react'
 
-const index = () => {
+function AboutUsPage() {
   return (
     <div><About /></div>
   )
 }
 
-export default index
+export default AboutUsPage
