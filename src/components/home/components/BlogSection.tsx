@@ -68,7 +68,7 @@ const BlogSection = () => {
       date: "2025",
       author: "Blinq Research",
       image: blog6,
-      url: "https://www.linkedin.com/pulse/battery-swapping-powering-next-wave-ev-adoption-blinq-mobility-pbkgf/",
+      url: "https://evreporter.com/ev-startup-blinq-mobility-raises-%e2%82%b94-3-cr-in-pre-seed-funding-to-bring-battery-swapping-to-4-wheeler-evs-in-india/ ",
       category: "Industry Insights"
     }
   ];
