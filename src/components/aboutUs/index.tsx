@@ -26,11 +26,12 @@ import g6 from '@/untils/images/Copy of IMG_20250913_001938.jpg';
 import g8 from '@/untils/images/boss.jpg';
 import g9 from '@/untils/images/1738258039827.jpg';
 import g10 from '@/untils/images/newimages/jurney 1.jpg';
-import chittar from '@/untils/images/newimages/Chittar bhaiya.jpeg';
+import chittar from '@/untils/images/newimages/Chittar_bhaiya_1.png';
 import camp from '@/untils/images/campus fund 2.jpg';
 import nikeshspeech from '@/untils/images/WhatsApp Image 2025-01-25 at 23.29.29_0fb77bce.jpg';
 import g11 from '@/untils/images/newimages/Blinq Team.jpg';
 import g12 from '@/untils/images/newimages/jurny2.png';
+import g4 from '@/untils/images/gp4.jpg';
 import bgheader from '@/untils/images/newimages/just swap bg.png';
 
 import Image from 'next/image';
@@ -60,12 +61,12 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden">
+      <section className="relative min-h-[80vh] md:min-h-screen flex items-center justify-center py-20 overflow-hidden">
         <Image
           src={bgheader}
           alt=""
           fill
-          className="object-cover object-center"
+          className="object-cover object-[center_30%] md:object-center"
           priority
           sizes="100vw"
         />
@@ -105,12 +106,19 @@ const About = () => {
             Join us to design, build, and scale the EVs redefining how the world moves.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            
-            <button onClick={()=>{
-              router.push("https://www.notion.so/Blinq-Build-the-Future-of-Mobility-With-Us-27853783cf5b807e90f9c9524c5393c6?source=copy_link")
-            }} className="px-8 py-4 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:bg-secondary/80 transition-colors">
-            Be Part of our Journey
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
+            <button
+              onClick={() => {
+                router.push(
+                  'https://www.notion.so/Blinq-Build-the-Future-of-Mobility-With-Us-27853783cf5b807e90f9c9524c5393c6?source=copy_link'
+                );
+              }}
+              className="px-8 py-4 bg-electric-blue/70 text-white font-semibold rounded-md
+              shadow-[0_10px_24px_rgba(56,189,248,0.45)] hover:bg-electric-blue
+              hover:shadow-[0_12px_30px_rgba(56,189,248,0.65)] transition-all duration-300
+              border border-electric-blue/60"
+            >
+              Be Part of our Journey
             </button>
           </div>
         </div>
@@ -185,7 +193,7 @@ engineer reliable EVs from scratch,
                 className="rounded-2xl shadow-electric w-full aspect-[4/3] object-cover"
               />
               <Image 
-                src={g11} 
+                src={g4} 
                 alt="Team collaborating in workspace"
                 className="rounded-2xl shadow-accent w-full aspect-[4/3] object-cover"
               />

@@ -220,7 +220,7 @@ export const InteractiveVideo = () => {
         {containerSize.width > 0 && containerSize.height > 0 && hotspots.map((hotspot) => (
           <div
             key={hotspot.id}
-            className="hotspot absolute z-[10000] bg-primary-main/80 hover:bg-primary-main/100 hover:scale-110 transition-all duration-300 rounded-full p-1 cursor-pointer"
+            className="hotspot absolute z-[10000] cursor-pointer"
             style={{
               left: `${hotspot.x}%`,
               top: `${hotspot.y}%`,
@@ -232,9 +232,17 @@ export const InteractiveVideo = () => {
               console.log('Hotspot clicked:', hotspot.title);
             }}
           >
-            <span
-              className="block rounded-full border-white bg-white/10 backdrop-blur-md backdrop-saturate-150 shadow-lg animate-border-blink w-[15px] md:w-[20px] h-[15px] md:h-[20px]"
-            />
+            {/* Rounded wave ripple */}
+            <span className="relative flex items-center justify-center w-[32px] h-[32px] md:w-[40px] md:h-[40px]">
+              {/* Outer waves - brighter & more visible */}
+              <span className="absolute inset-0 rounded-full border border-cyan-300/80 bg-cyan-500/25 animate-ping" />
+              <span className="absolute inset-2 rounded-full border border-cyan-200/80 bg-cyan-400/25 animate-ping [animation-delay:150ms]" />
+              {/* Core shape - glassmorphic circle */}
+              <span className="relative w-[12px] h-[12px] md:w-[14px] md:h-[14px] rounded-full
+                bg-slate-900/40 border-2 border-cyan-200/90
+                backdrop-blur-sm backdrop-saturate-150
+                shadow-[0_0_18px_rgba(56,189,248,0.9)]" />
+            </span>
           </div>
         ))}
 

@@ -12,6 +12,16 @@ import Image from "next/image";
 const BlogSection = () => {
   const blogs = [
     {
+      id: 6,
+      title: "Blinq Mobility raises ₹4.3 cr Pre-Seed to develop 4W battery swapping",
+      description: "Blinq Mobility Pvt. Ltd.an electric mobility startup, has raised ₹4.3 crore in a pre-seed funding round led by 8i Ventures.The round also saw participation from IIMA Ventures, AIC Banasthali Vidyapith, and a group of angel investors",
+      date: "2025",
+      author: "Blinq Research",
+      image: blog6,
+      url: "https://evreporter.com/ev-startup-blinq-mobility-raises-%e2%82%b94-3-cr-in-pre-seed-funding-to-bring-battery-swapping-to-4-wheeler-evs-in-india/ ",
+      category: "Most recent"
+    },
+    {
       id: 1,
       title: "IIT Startup India Cohort 12",
       description: "Blinq Mobility selected for prestigious IIT Startup India Cohort 12, marking a significant milestone in our journey to revolutionize urban mobility.",
@@ -61,16 +71,7 @@ const BlogSection = () => {
       url: "https://www.linkedin.com/pulse/battery-swapping-powering-next-wave-ev-adoption-blinq-mobility-pbkgf/",
       category: "Industry Insights"
     },
-    {
-      id: 6,
-      title: "Blinq Mobility raises ₹4.3 cr Pre-Seed to develop 4W battery swapping",
-      description: "Blinq Mobility Pvt. Ltd.an electric mobility startup, has raised ₹4.3 crore in a pre-seed funding round led by 8i Ventures.The round also saw participation from IIMA Ventures, AIC Banasthali Vidyapith, and a group of angel investors",
-      date: "2025",
-      author: "Blinq Research",
-      image: blog6,
-      url: "https://evreporter.com/ev-startup-blinq-mobility-raises-%e2%82%b94-3-cr-in-pre-seed-funding-to-bring-battery-swapping-to-4-wheeler-evs-in-india/ ",
-      category: "Industry Insights"
-    }
+   
   ];
 
   return (

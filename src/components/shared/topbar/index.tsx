@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Logo from "@/untils/images/newimages/Logo Rect White 4k.png";
+import Logo from "@/untils/images/logoblinq.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import Image from "next/image";
 import CloseIcon from "@mui/icons-material/Close";
