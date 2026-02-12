@@ -4,8 +4,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        {/* Add or update this line for your favicon */}
-        {/* <link rel="icon" href="/logo.png" /> */}
+        <link rel="icon" href="/favicon.png" type="image/png" />
       </Head>
       <body>
         <Main />
