@@ -33,6 +33,7 @@ import g11 from '@/untils/images/newimages/Blinq Team.jpg';
 import g12 from '@/untils/images/newimages/jurny2.png';
 import g4 from '@/untils/images/gp4.jpg';
 import bgheader from '@/untils/images/newimages/just swap bg.png';
+import checkque from '@/untils/images/checque.jpg';
 
 import Image from 'next/image';
 import { useRouter } from 'next/router';
@@ -450,7 +451,15 @@ engineer reliable EVs from scratch,
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
             </div>
-         
+            <div className="relative group overflow-hidden rounded-2xl aspect-[4/3] animate-fade-in" style={{ animationDelay: '0.9s' }}>
+              <Image 
+                src={checkque} 
+                alt="Team meeting" 
+                
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
+            </div>
             
           </div>
         </div>
